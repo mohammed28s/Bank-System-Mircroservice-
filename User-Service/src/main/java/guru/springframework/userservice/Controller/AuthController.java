@@ -11,6 +11,7 @@ import guru.springframework.userservice.Repository.RoleRepository;
 import guru.springframework.userservice.Repository.UserRepository;
 import guru.springframework.userservice.Security.JwtUtil;
 import guru.springframework.userservice.ServiceImpl.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -56,7 +57,7 @@ public class AuthController {
 
 
     @PostMapping("/register") // This is register API
-    public ResponseEntity<?> register(@RequestBody CreateUserRequest req) {
+    public ResponseEntity<?> register(@Valid @RequestBody CreateUserRequest req) {
         if (userRepository.findByUsername(req.getUsername()).isPresent()) {
             return ResponseEntity.badRequest().body("Username is already exists!");
         }
