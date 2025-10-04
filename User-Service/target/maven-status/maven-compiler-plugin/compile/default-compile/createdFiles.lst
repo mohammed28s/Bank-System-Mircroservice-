@@ -1,0 +1,10 @@
+guru/springframework/userservice/DTO/AuthResponse.class
+guru/springframework/userservice/DTO/User.class
+guru/springframework/userservice/Security/CustomUserDetailsService.class
+guru/springframework/userservice/DTO/AuthRequest.class
+guru/springframework/userservice/Repository/UserRepository.class
+guru/springframework/userservice/Repository/RoleRepository.class
+guru/springframework/userservice/DTO/CreateUserRequest.class
+guru/springframework/userservice/Entity/Role.class
+guru/springframework/userservice/Configuration/SqliteConf.class
+guru/springframework/userservice/Entity/Users.class
